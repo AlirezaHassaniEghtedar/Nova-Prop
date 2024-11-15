@@ -1,0 +1,151 @@
+.form-container {
+  background: rgba(255, 255, 255, 0.07);
+  max-width: 1025px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 16px;
+}
+
+.form-container .form-header {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.form-container form {
+  width: calc(100% - 140px);
+}
+
+.form-container form .submit {
+  margin-top: 50px;
+  height: 50px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.form-container form .forgot-signed-up-before-btns {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.form-container form .forgot-signed-up-before-btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  width: calc(50% - 12.5px);
+  height: 50px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.form-container form .row {
+  justify-content: space-between;
+}
+
+.form-container form .row .input-box {
+  width: calc(50% - 22.5px);
+  position: relative;
+  margin-top: 5px;
+  position: relative;
+}
+
+.form-container form .row .input-box input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: 200;
+  outline: none;
+  caret-color: auto;
+  transition: all ease 0.3s;
+}
+
+.form-container form .row .input-box input:focus {
+  border-color: var(--primary-color);
+}
+
+.input-box.input-focused span {
+  color: var(--primary-color);
+}
+
+.form-container form .row .input-box span {
+  position: relative;
+  font-size: 18px;
+  font-weight: 200;
+  right: 10px;
+  z-index: 1;
+  transition: all ease 0.3s;
+}
+
+@media only screen and (max-width: 1100px) {
+  .form-container {
+    width: calc(100% - 40px);
+  }
+
+  .form-container form {
+    width: calc(100% - 80px);
+  }
+
+  .form-container form .row .input-box {
+    width: calc(50% - 15px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .form-container {
+    width: calc(100% - 40px);
+  }
+
+  .form-container .form-header {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .form-container form {
+    width: calc(100% - 40px);
+  }
+
+  .form-container form .row {
+    flex-direction: column;
+  }
+
+  .form-container form .row .input-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .form-container form .submit {
+    margin-top: 40px;
+  }
+
+  .form-container form .forgot-signed-up-before-btns {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .form-container form .forgot-signed-up-before-btns button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-container form .forgot-signed-up-before-btns a {
+    width: 100%;
+  }
+
+  .form-container form .forgot-signed-up-before-btns a {
+    margin-bottom: 20px;
+  }
+
+  .form-container form .row .input-box input {
+    border-width: 2px;
+  }
+}

@@ -1,0 +1,26 @@
+.image-404 {
+width: 60%;
+}
+
+.header-404 {
+    font-size: clamp(18px , 2vw + 1rem , 48px);
+}
+
+.btn-404 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    margin-top: 50px;
+    font-size: clamp(14px , 0.75vw + 0.75rem , 24px);
+    border-radius: 12px;
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+    .btn-404 {
+        margin-top: 15px;
+        border-radius: 8px;
+        padding: 5px 15px;
+    }
+}
