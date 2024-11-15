@@ -30,7 +30,7 @@ body {
   background-color: #000825;
   color: #fff;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h1 {
