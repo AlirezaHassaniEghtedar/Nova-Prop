@@ -654,6 +654,13 @@ header #navMenu li:not(.active):hover {
   background: var(--swiper-theme-color);
 }
 
+#newsSection .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10px;
+}
+
 #newsSection .swiper .swiper-pagination-bullet-active {
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9));
 }
@@ -1988,6 +1995,10 @@ header #account {
 
   #newsSection .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 1px;
+  }
+
+  #newsSection .swiper-pagination {
+    padding-block: 5px;
   }
 }
 
