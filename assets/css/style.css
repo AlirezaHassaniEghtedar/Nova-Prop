@@ -1360,9 +1360,6 @@ header #account {
   header .logo a img {
     width: 140px;
   }
-  header .logo {
-    margin-left: 20px;
-  }
 
   header #navMenu li {
     margin-left: 20px;
