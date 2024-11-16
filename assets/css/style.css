@@ -2226,7 +2226,7 @@ header #account {
   }
 
   #cards .cards div p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #cards {
@@ -2430,10 +2430,6 @@ header #account {
 
   .pr-80 {
     padding-right: 0;
-  }
-
-  header .close-btn {
-    font-size: 15px;
   }
 
   footer .wrapper {
