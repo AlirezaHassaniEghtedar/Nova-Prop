@@ -38,10 +38,10 @@ main.about-us-wrapper {
 .about-us-hero-section .left-section img,
 .about-us-secondary-section .right-section img,
 .pre-footer .left-section img {
-  max-width: 500px; 
+  max-width: 500px;
 }
 
-.about-us-hero-section .left-section img ,
+.about-us-hero-section .left-section img,
 .about-us-secondary-section .right-section img {
   filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.3));
 }
@@ -79,7 +79,7 @@ main.about-us-wrapper {
   padding: 15px;
   flex: 1 1 45%;
   max-width: 290px;
-  filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.3));
+  filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.5));
 }
 
 .cards-section .cards-header-container {
@@ -246,7 +246,8 @@ main.about-us-wrapper {
   .cards-section .cards-container .card-container {
     flex: 1 1 47%;
     max-width: none;
-    padding: 5px 11px;
+    padding: 5px 11px 11px;
+    filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.7));
   }
 
   .about-us-secondary-section {
@@ -345,6 +346,11 @@ main.about-us-wrapper {
     font-size: 12px;
     border-radius: 6px;
   }
+
+  .about-us-hero-section .left-section img,
+  .about-us-secondary-section .right-section img {
+    filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.5));
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -442,7 +448,7 @@ main.about-us-wrapper {
   .about-us-header-container {
     border-radius: 8px;
   }
-  
+
   .pre-footer .left-section img {
     max-width: 150px;
   }
