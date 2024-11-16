@@ -26,19 +26,29 @@ main.contact-us-wrapper {
   margin-bottom: 100px;
 }
 
+.contact-us-secondary-section .right-section ,
+.contact-us-secondary-section .left-section {
+  flex: 1 1 100%;
+} 
+
 .contact-us-hero-section {
   margin-bottom: 100px;
 }
 
-.contact-us-hero-section .left-section,
-.contact-us-secondary-section .left-section {
-  margin-right: 130px;
+.contact-us-hero-section .right-section ,
+.contact-us-hero-section .left-section {
+  flex: 1 1 100%;
 }
+
+/* .contact-us-hero-section .left-section,
+.contact-us-secondary-section .left-section {
+  margin-right: 0;
+} */
 
 .contact-us-hero-section .left-section img,
 .contact-us-secondary-section .right-section img,
 .pre-footer .left-section img {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .contact-us-hero-section .right-section h3,
