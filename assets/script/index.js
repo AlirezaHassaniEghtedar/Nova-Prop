@@ -9,6 +9,13 @@ mobileMenuIcon.addEventListener("click", handleHamburgerMobileMenuClick);
 mobileNavMenuCloseBtn.addEventListener('click' , handleMobileNavMenuClose)
 headerPlansSectionBtn.addEventListener('click' , handleMobileNavMenuClose)
 plansSectionButtons.forEach(button => button.addEventListener('click' , handlePlansButtonsClick))
+document.addEventListener('click' , handleCloseMenuOnDocumentClick)
+
+function handleCloseMenuOnDocumentClick (e) {
+  if (!mobileNavMenu.contains(e.target) && !mobileMenuIcon.contains(e.target)) {
+    handleMobileNavMenuClose()
+  }
+}
 
 function handlePlansButtonsClick (e) {
   plansSectionButtons.forEach(button => button.classList.remove('active'))
