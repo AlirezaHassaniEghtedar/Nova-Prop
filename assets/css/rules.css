@@ -55,20 +55,33 @@ main.rules-wrapper {
   }
 
   .QA-container .boxes-container .box button {
+    position: relative;
     background: rgba(1, 148, 254, 0.1);
     width: 100%;
     font-size: 20px;
     font-weight: 200;
     text-align: right;
     padding: 14px 15px;
-    border-radius: clamp(8px , 0.5vw + 0.5rem , 12px);
+    /* border-radius: clamp(8px , 0.5vw + 0.5rem , 12px);
     background-image: url(../icons/AccordionDropDownArrow.svg);
     background-position: 20px center;
     background-repeat: no-repeat;
-    background-size: 30px 30px;
+    background-size: 30px 30px; */
     transition: all ease 0.3s;
     border: 0;
     outline: none;
+  }
+
+  .QA-container .boxes-container .box button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-image: url(../icons/ArrowDown.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .QA-container .boxes-container .box button:hover , 
@@ -193,7 +206,7 @@ main.rules-wrapper {
     margin-bottom: 30px;
   }
   
-  .pre-footer .left-section button {
+  .pre-footer .left-section a {
     padding: 9px;
     width: 100%;
     font-size: 24px;

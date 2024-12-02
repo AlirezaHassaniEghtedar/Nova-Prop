@@ -13,7 +13,7 @@ document.addEventListener('click' , handleCloseMenuOnDocumentClick)
 
 function handleCloseMenuOnDocumentClick (e) {
   if (!mobileNavMenu.contains(e.target) && !mobileMenuIcon.contains(e.target)) {
-    handleMobileNavMenuClose()
+    handleMobileNavMenuClose();
   }
 }
 
