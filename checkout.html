@@ -84,37 +84,30 @@
             سایت را مطالعه کرده ام.
           </p>
         </div>
+        <!-- Items Headers -->
+        <div class="items-headers">
+          <p class="challanges-title">چالش</p>
+          <p class="total-price-title">قیمت کل</p>
+        </div>
         <!-- Cart Items -->
         <div class="cart-items">
           <div class="cart-item">
             <div class="cart-details">
-              <p class="cart-challenge">چالش: 2000 دلاری - A</p>
-              <div class="prices-container">
-                <p class="cart-price">قیمت کل: $35</p>
-                <p class="cart-final-price">قیمت نهایی: $35</p>
-              </div>
+              <p class="cart-challenge">چالش : 2000 دلاری - A</p>
+              <p class="total-price">15 دلار</p>
             </div>
-            <button class="cart-remove-btn">حذف</button>
           </div>
           <div class="cart-item">
             <div class="cart-details">
-              <p class="cart-challenge">چالش: 2000 دلاری - A</p>
-              <div class="prices-container">
-                <p class="cart-price">قیمت کل: $35</p>
-                <p class="cart-final-price">قیمت نهایی: $35</p>
-              </div>
+              <p class="cart-challenge">چالش : 2000 دلاری - A</p>
+              <p class="total-price">15 دلار</p>
             </div>
-            <button class="cart-remove-btn">حذف</button>
           </div>
           <div class="cart-item">
             <div class="cart-details">
-              <p class="cart-challenge">چالش: 2000 دلاری - A</p>
-              <div class="prices-container">
-                <p class="cart-price">قیمت کل: $35</p>
-                <p class="cart-final-price">قیمت نهایی: $35</p>
-              </div>
+              <p class="cart-challenge">چالش : 2000 دلاری - A</p>
+              <p class="total-price">15 دلار</p>
             </div>
-            <button class="cart-remove-btn">حذف</button>
           </div>
         </div>
         <!-- Cart Summary -->
@@ -133,11 +126,19 @@
           </div>
           <div class="cart-discount">
             <input type="text" placeholder="کد تخفیف خود را وارد کنید..." />
-            <button class="apply-discount-btn">اعمال کد تخفیف</button>
+            <a href="#" class="apply-discount-btn">اعمال کد تخفیف</a>
+          </div>
+          <div class="select-payment-gateway">
+            <p class="title">درگاه پرداخت</p>
+            <div class="gateways">
+              <div><img src="./assets/images/gateway.png" alt=""></div>
+              <div><img src="./assets/images/gateway.png" alt=""></div>
+              <div><img src="./assets/images/gateway.png" alt=""></div>
+            </div>
           </div>
         </div>
         <!-- Cart Checkout -->
-        <button class="cart-checkout-btn primary-btn">پرداخت</button>
+        <a href="#" class="cart-checkout-btn primary-btn">پرداخت</a>
       </div>
     </section>
 
@@ -198,6 +199,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/script/index.js"></script>
+    <script src="./assets/script/checkout.js"></script>
     <!-- Swiper -->
   </body>
 </html>
