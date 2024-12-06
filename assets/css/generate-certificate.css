@@ -1,0 +1,102 @@
+form.generateCertificate ,
+.generatedCertificates {
+    background: #000B34;
+    margin-top: 36px;
+    padding: 21px 41px 41px 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 16px;
+}
+
+.generatedCertificates {
+    margin-top: 25px;
+}
+
+form.generateCertificate h1 ,
+.generatedCertificates h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+form.generateCertificate div {
+    display: flex;
+    flex-direction: column;
+}
+
+form.generateCertificate div label {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+form.generateCertificate div input {
+    background: transparent;
+    border: 1px solid #FFF;
+    outline: 0;
+    border-radius: 12px;
+    caret-color: auto;
+    padding: 12px 10px;
+}
+
+form.generateCertificate div input:hover ,
+form.generateCertificate div input:focus {
+    border-color: var(--primary-color);
+}
+
+form.generateCertificate div input:hover label ,
+form.generateCertificate div input:focus label {
+    border-color: var(--primary-color);
+}
+
+
+form.generateCertificate ul li {
+    font-size: 14px;
+    position: relative;
+    padding-right: 15px;
+}
+
+form.generateCertificate ul li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+form.generateCertificate input[type="submit"] {
+    border: 0;
+    outline: none;
+    padding: 6px;
+    font-size: 22px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    form.generateCertificate h1 {
+        font-size: clamp(18px , 1.5vw + 1.5rem , 32px);
+    }
+    form.generateCertificate input[type="submit"] {
+        font-size: clamp(12px , 1vw + 1rem , 22px);
+    }
+
+    form.generateCertificate {
+        padding: 14px;
+    }
+
+    form.generateCertificate ul li {
+        font-size: 12px;
+    }
+
+    form.generateCertificate div label {
+        font-size: clamp(12px , 0.8vw + 0.8rem , 18px);
+    }
+
+    .main-content, #sidebar-toggle:checked ~ .dashboard .main-content {
+        margin-right: 40px;
+    }
+}

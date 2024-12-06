@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova Prop</title>
     <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="stylesheet" href="./assets/css/generate-certificate.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -18,10 +19,10 @@
           <label for="sidebar-toggle" class="sidebar-toggle-btn"><img src="./assets/icons/Menu.svg" alt=""></label>
         </div>
         <ul class="sidebar-menu">
-          <li class="active">
+          <li class="">
             <a href="./dashboard.html"
               ><img
-                src="./assets/icons/dashboard/Dashboard Layout.png"
+                src="./assets/icons/dashboard/Dashboard Layout.svg"
                 alt=""
               />
               <span>پیشخوان</span></a
@@ -39,17 +40,17 @@
                 های خریداری شده</span></a
             >
           </li>
-          <li class="">
-            <a href="generate-certificate.html"
+          <li class="active">
+            <a href="./generate-certificate.html"
               ><img
-                src="./assets/icons/dashboard/Verified Account.png"
+                src="./assets/icons/dashboard/active/Verified Account.svg"
                 alt=""
               />
               <span>دریافت سرتیفیکیت</span></a
             >
           </li>
           <li class="">
-            <a href="/authentication.html"
+            <a href="./authentication.html"
               ><img src="./assets/icons/dashboard/Touch ID.png" alt="" />
               <span>احراز
                 هویت</span></a
@@ -105,56 +106,27 @@
             <p class="user-username">نام کاربری کاربر</p>
           </div>
         </div>
-        <div class="dahsboard-hero-section">
-          <img src="./assets/images/71.png" alt="" />
-          <h1>به داشبورد خودتون خوش آمدید</h1>
+        <form class="generateCertificate">
+            <h1>دریافت گواهی</h1>
+            <div class="name">
+                <label for="name">نام (فقط حروف انگلیسی)</label>
+                <input type="text" id="name">
+            </div>
+            <div class="phone">
+                <label for="phone">شماره موبایل (فقط حروف انگلیسی)</label>
+                <input type="tel" id="phone">
+            </div>
+            <div class="accountNumber">
+                <label for="accountNumber">شماره حساب مرحله دوم (فقط اعداد)</label>
+                <input type="number" id="accountNumber">
+            </div>
+
+            <input type="submit" value="اعمال تغییرات" class="primary-btn">
+        </form>
+
+        <div class="generatedCertificates">
+            <h1>لیست گواهی های تولید شده</h1>
         </div>
-        <section class="content">
-          <article class="first-section">
-            <div class="right-section">
-              <h2>لورم ایپسوم متن ساختگی</h2>
-              <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
-                جامعه و متخصصان را می طلبد
-              </p>
-            </div>
-            <div class="left-section">
-              <img src="./assets/images/72.png" alt="" />
-            </div>
-          </article>
-          <article class="second-section">
-            <div class="right-section">
-              <img src="./assets/images/74.png" alt="" />
-            </div>
-            <div class="left-section">
-              <h2>لورم ایپسوم متن ساختگی</h2>
-              <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان
-                جامعه و متخصصان را می طلبد
-              </p>
-            </div>
-          </article>
-          <article class="third-section">
-            <div class="right-section">
-              <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است
-              </p>
-              <a href="#" class="primary-btn">لورم ایپسوم متن ساختگی</a>
-            </div>
-            <div class="left-section">
-              <img src="./assets/images/76.png" alt="" />
-            </div>
-          </article>
-        </section>
       </main>
     </div>
 

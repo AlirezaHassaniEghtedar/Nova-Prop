@@ -1,0 +1,64 @@
+.box {
+    background: #000B34;
+    margin-top: 36px;
+    padding: 21px 41px 41px 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 16px;
+}
+
+.box h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.box h4 {
+    text-align: center;
+    font-size: clamp(16px , 1.25vw + 1.25rem , 24px);
+}
+
+.box span {
+    text-align: center;
+    font-size: clamp(10px , 1vw + 1rem , 18px);
+}
+
+.box .buttons {
+    display: flex;
+    gap: 46px;
+    margin-top: 50px;
+}
+
+.box .buttons a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-content, #sidebar-toggle:checked ~ .dashboard .main-content {
+        margin-right: 65px;
+    }
+
+    .box {
+        padding: 14px;
+    }
+
+    .box .buttons {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content, #sidebar-toggle:checked ~ .dashboard .main-content {
+        margin-right: 40px;
+    }
+}

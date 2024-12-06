@@ -1,0 +1,205 @@
+form.authentication {
+    background: #000B34;
+    margin-top: 36px;
+    padding: 21px 41px 41px 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 16px;
+}
+
+form.authentication h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+form.authentication div.name , 
+form.authentication div.idCode {
+    display: flex;
+    flex-direction: column;
+}
+
+form.authentication div label {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+form.authentication div input {
+    background: transparent;
+    border: 1px solid #FFF;
+    outline: 0;
+    border-radius: 12px;
+    caret-color: auto;
+    padding: 12px 10px;
+}
+
+form.authentication div input:hover ,
+form.authentication div input:focus {
+    border-color: var(--primary-color);
+}
+
+form.authentication div input:hover label ,
+form.authentication div input:focus label {
+    border-color: var(--primary-color);
+}
+
+
+form.authentication ul li {
+    font-size: 14px;
+    position: relative;
+    padding-right: 15px;
+}
+
+form.authentication ul li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+form.authentication input[type="submit"] {
+    border: 0;
+    outline: none;
+    padding: 6px;
+    font-size: 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form.authentication .alarm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #BADEFB;
+    padding: 12px 10px 12px 12px;
+    border-radius: 12px;
+    gap: 10px   ;
+}
+
+form.authentication .alarm span {
+    font-size: 18px;
+    color: red;
+}
+
+form.authentication .inputs {
+    display: flex;
+    gap: 41px;
+}
+
+form.authentication .inputs div {
+    width: 100%;
+}
+
+form.authentication .get-pics h5 {
+    font-size: 26px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+form.authentication .get-pics .get-picture img {
+    width: 100%;
+}
+
+form.authentication .get-pics .id-card ,
+form.authentication .get-pics .id-card-and-selfie {
+    display: flex;
+    flex-direction: column;
+}
+
+form.authentication .get-data {
+    display: flex;
+}
+
+form.authentication .get-data .get-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    max-width: 150px;
+    text-align: center;
+    border: dashed 2px #FFF;
+    border-radius: 12px;
+}
+
+form.authentication .get-data .get-picture img {
+    max-width: 50px;
+    margin-bottom: 21px;
+}
+
+form.authentication .get-data .get-picture span {
+    font-size: 14px;
+}
+
+form.authentication .get-data ul {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form.authentication .id-card-and-selfie {
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+    form.authentication h1 {
+        font-size: clamp(18px , 1.5vw + 1.5rem , 32px);
+    }
+    form.authentication input[type="submit"] {
+        font-size: clamp(12px , 1vw + 1rem , 22px);
+    }
+
+    form.authentication {
+        padding: 14px;
+    }
+
+    form.authentication ul li {
+        font-size: 12px;
+    }
+
+    form.authentication div label {
+        font-size: clamp(12px , 0.8vw + 0.8rem , 18px);
+    }
+
+    .main-content, #sidebar-toggle:checked ~ .dashboard .main-content {
+        margin-right: 65px;
+    }
+
+    form.authentication .inputs {
+        flex-direction: column;
+    }
+
+    form.authentication .get-data .get-picture {
+        padding: 10px 20px 15px 20px;
+    }
+
+    form.authentication .get-data .get-picture span {
+        font-size: 10px;
+    }
+
+    form.authentication .get-data .get-picture img {
+        max-width: 40px;
+        margin-bottom: 11px;
+    }
+
+    form.authentication .id-card-and-selfie {
+        margin-top: 10px;
+    }
+
+    form.authentication .get-data ul {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content, #sidebar-toggle:checked ~ .dashboard .main-content {
+        margin-right: 40px;
+    }
+}

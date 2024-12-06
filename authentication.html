@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Prop</title>
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="stylesheet" href="./assets/css/authentication.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle" />
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2>جای لوگو</h2>
+          <!-- <button class="toggle-sidebar" id="toggleSidebar">☰</button> -->
+          <label for="sidebar-toggle" class="sidebar-toggle-btn"
+            ><img src="./assets/icons/Menu.svg" alt=""
+          /></label>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="">
+            <a href="./dashboard.html"
+              ><img
+                src="./assets/icons/dashboard/Dashboard Layout.svg"
+                alt=""
+              />
+              <span>پیشخوان</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./index.html#plansSection"
+              ><img src="./assets/icons/dashboard/Plus.png" alt="" /><span
+                >خرید چالش</span
+              ></a
+            >
+          </li>
+          <li class="">
+            <a href="#"
+              ><img src="./assets/icons/dashboard/Clipboard.png" alt="" /><span
+                >اکانت های خریداری شده</span
+              ></a
+            >
+          </li>
+          <li class="">
+            <a href="generate-certificate.html"
+              ><img
+                src="./assets/icons/dashboard/Verified Account.png"
+                alt=""
+              />
+              <span>دریافت سرتیفیکیت</span></a
+            >
+          </li>
+          <li class="active">
+            <a href="./authentication.html"
+              ><img src="./assets/icons/dashboard/active/Touch ID.svg" alt="" />
+              <span>احراز هویت</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./support.html"
+              ><img src="./assets/icons/dashboard/Headphones.png" alt="" />
+              <span>پشتیبانی</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./account.html"
+              ><img src="./assets/icons/dashboard/User.png" alt="" />
+              <span>حساب کاربری</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./changepassword.html"
+              ><img src="./assets/icons/dashboard/Lock.png" alt="" />
+              <span>تغییر رمز عبور</span></a
+            >
+          </li>
+          <li class="">
+            <a href="#"
+              ><img src="./assets/icons/dashboard/User Account.png" alt="" />
+              <span>پنل همکاری</span></a
+            >
+          </li>
+          <li class="logOut">
+            <a href="#"
+              ><img
+                src="./assets/icons/dashboard/Power Off Button.png"
+                alt=""
+              />
+              <span>خروج</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <main class="main-content" id="mainContent">
+        <div class="header-section">
+          <div class="user-info">
+            <img src="assets/images/dashboard-user-image.png" alt="" />
+            <p class="user-username">نام کاربری کاربر</p>
+          </div>
+        </div>
+
+        <form class="authentication">
+          <h1>احراز هویت</h1>
+          <div class="alarm">
+            <img src="./assets/images/Spam.png" alt="" />
+            <span
+              >اطلاعات ثبت شده قابل ویرایش نمی‌باشند. لطفا در وارد کردن اطلاعات
+              دقت فرمایید.</span
+            >
+          </div>
+          <div class="inputs">
+            <div class="name">
+              <label for="name">تاریخ تولد</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="idCode">
+              <label for="idCode">کد ملی</label>
+              <input type="tex" id="idCode" />
+            </div>
+          </div>
+
+          <div class="get-pics">
+            <div class="id-card">
+              <h5>تصویر کارت ملی</h5>
+              <div class="get-data">
+                <div class="get-picture">
+                  <img src="./assets/images/Download.svg" alt="" />
+                  <span>فایل مورد نظر را انتخاب نمایید</span>
+                </div>
+                <ul>
+                  <li>حجم عکس باید کمتر از 15 مگابایت باشد .</li>
+                  <li>عکس با کیفیت و واضح باشد .</li>
+                  <li>
+                    در صورتی که کارت ملی ندارید می‌توانید از شناسنامه جدید و یا
+                    پاسپورت معتبر استفاده نمایید.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="id-card-and-selfie">
+              <h5>تصویر سلفی همراه با کارت ملی</h5>
+              <div class="get-data">
+                <div class="get-picture">
+                  <img src="./assets/images/Download.svg" alt="" />
+                  <span>فایل مورد نظر را انتخاب نمایید</span>
+                </div>
+                <ul>
+                  <li>حجم عکس باید کمتر از 15 مگابایت باشد .</li>
+                  <li>عکس با کیفیت و واضح باشد .</li>
+                  <li>
+                    در صورتی که کارت ملی ندارید می‌توانید از شناسنامه جدید و یا
+                    پاسپورت معتبر استفاده نمایید.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" value="ارسال" class="primary-btn" />
+        </form>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/script/index.js"></script>
+    <script src="./assets/script/dashboard.js"></script>
+    <!-- Swiper -->
+  </body>
+</html>

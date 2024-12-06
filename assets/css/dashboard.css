@@ -1,0 +1,506 @@
+#sidebar-toggle {
+    display: none;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+#sidebar-toggle:checked ~ .dashboard .sidebar .sidebar-header h2{
+    display: none;
+}
+
+#sidebar-toggle:checked ~ .dashboard .sidebar .sidebar-header .sidebar-toggle-btn {
+    top: 41px;
+    right: 15px;
+}
+
+#sidebar-toggle:checked ~ .dashboard .sidebar li span {
+    display: none;
+}
+
+#sidebar-toggle:checked ~ .dashboard .sidebar {
+    width: 65px;
+    padding-inline: 0;
+    padding-top: 86px;
+    padding-right: 10px;
+}
+
+#sidebar-toggle:checked ~ .dashboard .sidebar li {
+    padding: 5px;
+    width: unset;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+
+#sidebar-toggle:checked ~ .dashboard .sidebar li.active::after {
+    left: -12px;
+    width: 7px;
+    height: 7px;
+    filter: drop-shadow(0 0 100px rgba(2, 135, 231, 1));
+}
+
+#sidebar-toggle:checked ~ .dashboard .sidebar li img {
+    margin-left: 0;
+}
+
+#sidebar-toggle:checked ~ .dashboard .sidebar li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+}
+
+#sidebar-toggle:checked ~ .dashboard .main-content {
+    margin-right: 65px;
+}
+
+/* #sidebar-toggle:checked ~ .dashboard .main-content .dahsboard-hero-section h1 {
+    margin-right: 264px;
+} */
+
+#sidebar-toggle:checked ~ .dashboard .main-content .first-section .left-section img {
+    margin-right: 100px;
+}
+
+#sidebar-toggle:checked ~ .dashboard .main-content .second-section img {
+    margin: auto 43px auto 155px;
+}
+
+#sidebar-toggle:checked ~ .dashboard .main-content .third-section img {
+    /* padding-right: 273px; */
+}
+
+#sidebar-toggle:checked ~ .dashboard .main-content .third-section .right-section {
+    margin-right: 43px;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background: #000B34;
+    width: 321px;
+    overflow-y: auto;
+    transition: width 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: 15px;
+}
+
+.main-content {
+    margin-right: 321px;
+    padding: 36px 73px 100px 116px;
+}
+
+.sidebar-header h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 25px 0 40px;
+    width: 100%;
+}
+
+.sidebar-toggle-btn {
+    position: absolute;
+    top: 50px;
+    right: 31px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.sidebar-menu li {
+    font-size: 20px;
+    font-weight: normal;
+    width: 100%;
+    padding: 5px 16px;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 0.3s;
+}
+
+.sidebar-menu li.active::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+    box-shadow: 0 0 10px var(--primary-color);
+    animation: shadowWave 1s infinite;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar-menu li a img {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.sidebar-menu li.active {
+    background: #FFF;
+}
+
+.sidebar-menu li:not(.active):hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.sidebar-menu li.logOut a span {
+    color: red;
+}
+
+.sidebar-menu li.active a span {
+    color: var(--primary-color);
+}
+
+.dahsboard-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to right , rgba(12, 53, 85, 0.25) , rgba(0, 8, 37, 1));
+    border-radius: 17px;
+    padding-left: 25px;
+}
+
+.dahsboard-hero-section h1 {
+    font-size: 48px;
+    margin-right: 75px;
+    text-align: center;
+}
+
+.dahsboard-hero-section img {
+    max-width: 390px;
+    filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.75));
+}
+
+main .header-section  .user-info img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    padding: 6px;
+}
+
+main .header-section .user-info .user-username {
+    font-size: 22px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+main .header-section .user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .content {
+    width: 100%;
+    margin-top: 50px;
+}
+
+main .content .first-section {
+    display: flex;
+    width: 100%;
+    padding-right: 43px;
+}
+
+main .content .first-section .right-section ,
+main .content .second-section .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+main .content .first-section .right-section h2 ,
+main .content .second-section .left-section h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+main .content .first-section .right-section p ,
+main .content .second-section .left-section p {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 40px;
+    text-align: justify;
+}
+
+main .content .first-section .left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main .content .first-section .left-section img {
+    max-width: 85%;
+    margin-right: 41px;
+    filter: drop-shadow(0 0 100px rgba(167, 69, 195, 0.5));
+}
+
+main .content .second-section {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+main .content .second-section .right-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content .third-section .left-section {
+    width: 100%;
+}
+
+main .content .second-section img {
+    max-width: 85%;
+    margin: auto 43px auto 41px;
+    filter: drop-shadow(0 0 100px rgba(52, 179, 213, 0.35));
+}
+
+main .content .third-section img {
+    max-width: 85%;
+    margin-right: 41px;
+    filter: drop-shadow(0 0 100px rgba(1, 148, 254, 0.5));
+}
+
+main .content .third-section {
+    display: flex;
+}
+
+main .content .third-section a.primary-btn {
+    padding: 9px 84.5px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+main .content .third-section .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .content .third-section .right-section p {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+main .content .third-section .right-section a {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 1406px) {
+    /* #sidebar-toggle:checked ~ .dashboard .main-content .third-section img {
+        margin-right: 200px;
+    } */
+
+    #sidebar-toggle:checked ~ .dashboard .main-content .first-section .left-section img {
+        margin-right: 50px;
+    }
+
+    main .content .first-section {
+        padding-right: 0;
+    }
+
+    #sidebar-toggle:checked ~ .dashboard .main-content .second-section img {
+        margin: auto 43px auto 25px;
+    }
+
+    .dahsboard-hero-section h1 {
+        font-size: clamp(14px , 1.25vw + 1.25rem , 48px);
+    }
+
+    .dahsboard-hero-section img {
+        max-width: clamp(107px , 20vw + 4rem , 390px);
+    }
+
+    .sidebar-menu li {
+        font-size: clamp(12px , 0.7vw + 0.7rem , 20px);
+        padding: 5px 10px;
+    }
+
+    .sidebar {
+        width: clamp(245px , 20vw + 5rem , 321px);
+        padding-inline: 10px;
+    }
+
+
+    .sidebar-toggle-btn {
+        right: 15px;
+    }
+
+    .main-content {
+        padding: 17px 10px 15px 10px;
+        margin-right: clamp(245px , 20vw + 5rem , 321px);
+    }
+
+    main .content .first-section .right-section p ,
+    main .content .second-section .left-section p {
+        font-size: clamp(7px , 0.5vw + 0.5rem , 18px);
+        line-height: unset;
+    }
+
+    main .content {
+        margin-top: 20px;
+    }
+
+    main .content h2 {
+        text-align: center;
+        font-size: clamp(12px , 0.9vw + 0.9rem , 36px) !important;
+    }
+
+    main .content .third-section .right-section p {
+        font-size: clamp(10px , 0.7vw + 0.7rem , 24px);
+    }
+
+    main .content .third-section .right-section a {
+        font-size: clamp(10px , 0.7vw + 0.7rem , 24px);
+    }
+
+    main .content .second-section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .sidebar-header h2 {
+        font-size: clamp(18px , 1.5vw + 1.5rem , 48px);
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    main .content .second-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    main .content .third-section .right-section a {
+        font-size: clamp(10px , 0.4vw + 0.5rem , 24px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dahsboard-hero-section h1 {
+        font-size: clamp(14px , 1vw + 1rem , 48px);
+        font-weight: 200;
+        margin-right: 10px;
+    }
+
+    main .header-section .user-info img {
+        width: 15%;
+        padding: 3px;
+    }
+
+    main .content .second-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-right: clamp(245px , 20vw + 5rem , 321px);
+    }
+
+    #sidebar-toggle:checked ~ .dashboard .main-content .third-section .right-section {
+        margin-right: 0;
+        padding-left: 10px;
+    }
+
+    main .content .third-section a.primary-btn {
+        width: 100%;
+        padding: 9px;
+    }
+
+    main .content .third-section img {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #sidebar-toggle:checked ~ .dashboard .sidebar {
+        width: 40px;
+    }  
+
+    #sidebar-toggle:checked ~ .dashboard .sidebar li {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sidebar-menu li.active::after {
+        display: none;
+    }
+
+    #sidebar-toggle:not(:checked) ~ .dashboard .sidebar-menu li.active::after {
+        display: block;
+        width: 10px;
+        height: 10px;
+    }
+
+    #sidebar-toggle:checked ~ .dashboard .sidebar {
+        padding-right: 8px;
+    }
+
+    #sidebar-toggle:checked ~ .dashboard .sidebar li {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+    }
+
+    #sidebar-toggle:checked ~ .dashboard .sidebar li img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sidebar-menu {
+        gap: 10px;
+    }
+
+    .main-content , 
+    #sidebar-toggle:checked ~ .dashboard .main-content {
+        margin-right: 49px;
+    }
+
+    #sidebar-toggle:checked ~ .dashboard .sidebar .sidebar-header .sidebar-toggle-btn {
+        right: 8px;
+    }
+
+    main .content .first-section .right-section h2, main .content .second-section .left-section h2 {
+        font-size: clamp(10px , 0.7vw + 0.7rem , 36px) !important;
+        margin-bottom: 10px;
+    }
+}
