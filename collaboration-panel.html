@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova Prop</title>
     <link rel="stylesheet" href="./assets/css/dashboard.css" />
-    <link rel="stylesheet" href="./assets/css/support.css" />
+    <link rel="stylesheet" href="./assets/css/collaboration-panel.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -45,7 +45,7 @@
             >
           </li>
           <li class="">
-            <a href="./generate-certificate.html"
+            <a href="generate-certificate.html"
               ><img
                 src="./assets/icons/dashboard/Verified Account.png"
                 alt=""
@@ -59,9 +59,9 @@
               <span>احراز هویت</span></a
             >
           </li>
-          <li class="active">
+          <li class="">
             <a href="./support.html"
-              ><img src="./assets/icons/dashboard/active/Headphones.svg" alt="" />
+              ><img src="./assets/icons/dashboard/Headphones.png" alt="" />
               <span>پشتیبانی</span></a
             >
           </li>
@@ -77,9 +77,12 @@
               <span>تغییر رمز عبور</span></a
             >
           </li>
-          <li class="">
-            <a href="./collaboration-panel.html"
-              ><img src="./assets/icons/dashboard/User Account.png" alt="" />
+          <li class="active">
+            <a href="#"
+              ><img
+                src="./assets/icons/dashboard/active/User Account.svg"
+                alt=""
+              />
               <span>پنل همکاری</span></a
             >
           </li>
@@ -105,17 +108,47 @@
         </div>
 
         <div class="box">
-          <h1>پشتیبانی</h1>
-          <h4>راه های پشتیبانی</h4>
+          <h4>اطلاعات معرف</h4>
           <span
-            >برای دریافت پشتیبانی بهتر توصیه می‌شود از چت آنلاین سایت اقدام
-            نمایید.</span
+            >لینک معرفی شما :
+            <a href="#">http://novaprop.org/accounts/signup/7777777</a></span
           >
+          <span>تعداد افراد معرفی شده : 0</span>
+          <span>کمیسیون خرید زیر مجموعه ها : 0$</span>
+        </div>
 
-          <div class="buttons">
-            <a href="./tickets-list.html" class="primary-btn">لیست تیکت ها</a>
-            <a href="./submit-ticket.html" class="primary-btn">ارسال تیکت</a>
+        <form class="collaboration-panel">
+          <h1>برداشت سود</h1>
+          <div class="alarm">
+            <img src="./assets/images/Spam.png" alt="" />
+            <span
+              >مقدار سود از زیرمجموعه گیری در پراپ پلاس 10 درصد میباشد .
+              کاربرانی که با لینک شما در سایت ثبت نام میکنند درصورتی که خرید
+              موفق داشته باشد به صورت اتوماتیک 10 درصد مبلغ کل پرداخت به حساب
+              شما افزوده میشود</span
+            >
           </div>
+          <div class="withdrawal-balance">
+            <span>موجودی قابل برداشت :  0.00$</span>
+          </div>
+          <div class="wallet-address">
+            <label for="wallet-address">آدرس کیف پول </label>
+            <input type="text" id="wallet-address" />
+          </div>
+          <div class="account-number">
+            <label for="account-number">شماره حساب </label>
+            <input type="tel" id="account-number" />
+          </div>
+          <div class="withdrawal-amount">
+            <label for="withdrawal-amount">مبلغ برداشت</label>
+            <input type="text" id="withdrawal-amount" />
+          </div>
+
+          <input type="submit" value="درخواست برداشت" class="primary-btn" />
+        </form>
+
+        <div class="box withdrawals-history">
+            <h4>تاریخچه برداشت ها</h4>
         </div>
       </main>
     </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova Prop</title>
     <link rel="stylesheet" href="./assets/css/dashboard.css" />
-    <link rel="stylesheet" href="./assets/css/support.css" />
+    <link rel="stylesheet" href="./assets/css/submit-ticket.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -59,9 +59,9 @@
               <span>احراز هویت</span></a
             >
           </li>
-          <li class="active">
+          <li class="">
             <a href="./support.html"
-              ><img src="./assets/icons/dashboard/active/Headphones.svg" alt="" />
+              ><img src="./assets/icons/dashboard/Headphones.png" alt="" />
               <span>پشتیبانی</span></a
             >
           </li>
@@ -103,19 +103,57 @@
             <p class="user-username">نام کاربری کاربر</p>
           </div>
         </div>
-
-        <div class="box">
-          <h1>پشتیبانی</h1>
-          <h4>راه های پشتیبانی</h4>
-          <span
-            >برای دریافت پشتیبانی بهتر توصیه می‌شود از چت آنلاین سایت اقدام
-            نمایید.</span
-          >
-
-          <div class="buttons">
-            <a href="./tickets-list.html" class="primary-btn">لیست تیکت ها</a>
-            <a href="./submit-ticket.html" class="primary-btn">ارسال تیکت</a>
+        <form class="submitTicket">
+          <div class="tickets-section-header">
+            <h1>ارسال تیکت</h1>
+            <p class="support-text">
+              راه ارتباطی اصلی نووا پراپ با مشتریان سیستم تیکت می‌باشد.
+            </p>
           </div>
+          <div class="subjecct">
+            <label for="subjecct">موضوع تیکت</label>
+            <input type="text" id="subjecct" placeholder="موضوع تیکت خود را وارد کنید .."/>
+          </div>
+          <div class="related-section">
+            <label for="related-section">بخش</label>
+            <select name="related-section" id="related-section">
+                <option value="section-1">بخش 1</option>
+                <option value="section-2">بخش 2</option>
+                <option value="section-3">بخش 3</option>
+            </select>
+          </div>
+          <div class="step-one-account">
+            <label for="step-one-account">اکانت مرحله یک (اختیاری)</label>
+            <select name="step-one-account" id="step-one-account">
+                <option value="section-1">بخش 1</option>
+                <option value="section-2">بخش 2</option>
+                <option value="section-3">بخش 3</option>
+            </select>
+          </div>
+          <div class="step-two-account">
+            <label for="step-two-account">اکانت ریل یا مرحله دو (اختیاری)</label>
+            <select name="step-two-account" id="step-two-account">
+                <option value="section-1">بخش 1</option>
+                <option value="section-2">بخش 2</option>
+                <option value="section-3">بخش 3</option>
+            </select>
+          </div>
+
+          <div class="ticket-description">
+            <label for="ticket-description">موضوع تیکت</label>
+            <textarea rows="5" name="ticket-description" id="ticket-description" placeholder="توضیحات تیکت خود را اینجا بنویسید .."></textarea>
+          </div>
+
+          <div class="load-file">
+            <span>بارگزاری فایل</span>
+            <span>فایل خود را انتخاب کنید یا اینجا Drag کنید.</span>
+          </div>
+
+          <input type="submit" value="اعمال تغییرات" class="primary-btn" />
+        </form>
+
+        <div class="last-5-tickets">
+          <h1>5 تیکت آخر شما</h1>
         </div>
       </main>
     </div>

@@ -1,0 +1,182 @@
+.ticketsList {
+  background: #000b34;
+  margin-top: 36px;
+  padding: 21px 41px 41px 41px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.ticketsList h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ticketsList .text-support {
+  font-size: clamp(12px, 0.85vw + 0.85rem, 18px);
+  margin-bottom: 30px;
+}
+
+/* .ticketsList div {
+  display: flex;
+  flex-direction: column;
+} */
+
+.ticketsList div label {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.ticketsList div input {
+  background: transparent;
+  border: 1px solid #fff;
+  outline: 0;
+  border-radius: 12px;
+  caret-color: auto;
+  padding: 12px 10px;
+}
+
+.ticketsList div input:hover,
+.ticketsList div input:focus {
+  border-color: var(--primary-color);
+}
+
+.ticketsList div input:hover label,
+.ticketsList div input:focus label {
+  border-color: var(--primary-color);
+}
+
+.ticketsList input[type="submit"] {
+  border: 0;
+  outline: none;
+  padding: 6px;
+  font-size: 22px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.ticketsList form input:not([type="button"]),
+.ticketsList form select {
+  background: transparent;
+  border: 1px solid #fff;
+  outline: 0;
+  border-radius: 8px;
+  caret-color: auto;
+  padding: 7px 10px;
+  font-size: 18px;
+  width: 25%;
+}
+
+.ticketsList form select {
+    appearance: none;
+    background-image: url('../icons/ArrowDown.svg');
+    background-repeat: no-repeat;
+    background-position: left 11px center;
+    background-size: 20px 20px;
+}
+
+.ticketsList form input[type="button"] {
+  padding: 7px 53px;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.ticketsList form select option {
+  color: var(--background-color);
+  outline: none;
+  border: 0;
+}
+
+.ticketsList form select option:hover {
+  background-color: var(--primary-color);
+}
+
+.ticketsList form {
+  margin-bottom: 20px;
+}
+
+.ticketsList .ticket-header {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 50px;
+}
+
+.ticketsList .ticket-header span {
+  color: #000825;
+  font-size: 18px;
+}
+
+.ticketsList .ticket-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.ticketsList .ticket-row:not(:last-child) {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.15);
+  padding-bottom: 15px;
+}
+
+.ticketsList .ticket-row span {
+  font-size: 14px;
+}
+
+.ticketsList .ticket-row span:last-child {
+  background: rgba(204, 204, 204, 0.15);
+  padding: 5px 50px;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.pagination button.current-page {
+  background: var(--primary-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .ticketsList h1 {
+    font-size: clamp(18px, 1.5vw + 1.5rem, 32px);
+  }
+  .ticketsList input[type="submit"] {
+    font-size: clamp(12px, 1vw + 1rem, 22px);
+  }
+
+  .ticketsList {
+    padding: 14px;
+  }
+
+  .ticketsList ul li {
+    font-size: 12px;
+  }
+
+  .ticketsList div label {
+    font-size: clamp(12px, 0.8vw + 0.8rem, 18px);
+  }
+
+  .main-content,
+  #sidebar-toggle:checked ~ .dashboard .main-content {
+    margin-right: 40px;
+  }
+}

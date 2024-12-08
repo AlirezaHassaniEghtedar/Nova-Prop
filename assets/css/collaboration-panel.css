@@ -1,0 +1,159 @@
+form.collaboration-panel {
+    background: #000B34;
+    margin-top: 25px;
+    padding: 21px 41px 41px 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 16px;
+}
+
+main .box {
+    background: #000B34;
+    margin-top: 36px;
+    padding: 20px 41px 20px 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 16px; 
+}
+
+main .box.withdrawals-history {
+    margin-top: 25px;
+}
+
+main .box span {
+    font-size: clamp(12px , 0.7vw + 0.7rem , 18px);
+}
+
+main .box span a {
+    color: var(--primary-color);
+}
+
+main .box h4 {
+    font-size: clamp(18px , 1.25vw + 1.25rem , 32px);
+}
+
+form.collaboration-panel h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+form.collaboration-panel div:not(.alarm) {
+    display: flex;
+    flex-direction: column;
+}
+
+form.collaboration-panel div label {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+form.collaboration-panel div input {
+    background: transparent;
+    border: 1px solid #FFF;
+    outline: 0;
+    border-radius: 12px;
+    caret-color: auto;
+    padding: 12px 10px;
+}
+
+form.collaboration-panel div input:hover ,
+form.collaboration-panel div input:focus {
+    border-color: var(--primary-color);
+}
+
+form.collaboration-panel div input:hover label ,
+form.collaboration-panel div input:focus label {
+    border-color: var(--primary-color);
+}
+
+
+form.collaboration-panel ul li {
+    font-size: 14px;
+    position: relative;
+    padding-right: 15px;
+}
+
+form.collaboration-panel ul li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+form.collaboration-panel input[type="submit"] {
+    border: 0;
+    outline: none;
+    padding: 6px;
+    font-size: 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form.collaboration-panel .alarm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #BADEFB;
+    padding: 12px 10px 12px 12px;
+    border-radius: 12px;
+    gap: 10px   ;
+}
+
+form.collaboration-panel .alarm span {
+    font-size: 18px;
+    color: red;
+}
+
+form.collaboration-panel .withdrawal-balance span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    form.collaboration-panel h1 {
+        font-size: clamp(18px , 1.5vw + 1.5rem , 32px);
+    }
+    form.collaboration-panel input[type="submit"] {
+        font-size: clamp(12px , 1vw + 1rem , 22px);
+    }
+
+    form.collaboration-panel ,
+    main .box.withdrawals-history {
+        padding: 14px;
+        margin-top: 10px;
+    }
+
+    main .box {
+        padding: 14px;
+    }
+
+    form.collaboration-panel ul li {
+        font-size: 12px;
+    }
+
+    form.collaboration-panel div label {
+        font-size: clamp(12px , 0.8vw + 0.8rem , 18px);
+    }
+
+    .main-content, #sidebar-toggle:checked ~ .dashboard .main-content {
+        margin-right: 65px;
+    }
+
+    form.collaboration-panel input[type="submit"] {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content, #sidebar-toggle:checked ~ .dashboard .main-content {
+        margin-right: 40px;
+    }
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Prop</title>
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="stylesheet" href="./assets/css/tickets-list.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle" />
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2>جای لوگو</h2>
+          <!-- <button class="toggle-sidebar" id="toggleSidebar">☰</button> -->
+          <label for="sidebar-toggle" class="sidebar-toggle-btn"
+            ><img src="./assets/icons/Menu.svg" alt=""
+          /></label>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="">
+            <a href="./dashboard.html"
+              ><img
+                src="./assets/icons/dashboard/Dashboard Layout.svg"
+                alt=""
+              />
+              <span>پیشخوان</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./index.html#plansSection"
+              ><img src="./assets/icons/dashboard/Plus.png" alt="" /><span
+                >خرید چالش</span
+              ></a
+            >
+          </li>
+          <li class="">
+            <a href="#"
+              ><img src="./assets/icons/dashboard/Clipboard.png" alt="" /><span
+                >اکانت های خریداری شده</span
+              ></a
+            >
+          </li>
+          <li class="">
+            <a href="./generate-certificate.html"
+              ><img
+                src="./assets/icons/dashboard/Verified Account.png"
+                alt=""
+              />
+              <span>دریافت سرتیفیکیت</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./authentication.html"
+              ><img src="./assets/icons/dashboard/Touch ID.png" alt="" />
+              <span>احراز هویت</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./support.html"
+              ><img src="./assets/icons/dashboard/Headphones.png" alt="" />
+              <span>پشتیبانی</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./account.html"
+              ><img src="./assets/icons/dashboard/User.png" alt="" />
+              <span>حساب کاربری</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./changepassword.html"
+              ><img src="./assets/icons/dashboard/Lock.png" alt="" />
+              <span>تغییر رمز عبور</span></a
+            >
+          </li>
+          <li class="">
+            <a href="./collaboration-panel.html"
+              ><img src="./assets/icons/dashboard/User Account.png" alt="" />
+              <span>پنل همکاری</span></a
+            >
+          </li>
+          <li class="logOut">
+            <a href="#"
+              ><img
+                src="./assets/icons/dashboard/Power Off Button.png"
+                alt=""
+              />
+              <span>خروج</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <main class="main-content" id="mainContent">
+        <div class="header-section">
+          <div class="user-info">
+            <img src="assets/images/dashboard-user-image.png" alt="" />
+            <p class="user-username">نام کاربری کاربر</p>
+          </div>
+        </div>
+        <div class="ticketsList">
+          <h1>تیکت ها</h1>
+          <p class="text-support">
+            پشتیبانان ما در اسرع وقت پاسخگوی شما خواهند بود
+          </p>
+
+          <form action="#">
+            <input
+              type="text"
+              name="searchWord"
+              id="searchWord"
+              placeholder="جستجو .."
+            />
+            <select name="status" id="status">
+              <option value="all">همه</option>
+              <option value="completed">تکمیل شده</option>
+              <option value="pending">در انتظار</option>
+            </select>
+
+            <input type="button" value="جستجو" class="primary-btn">
+          </form>
+
+          <div class="tickets-main-list">
+
+            <div class="ticket-header">
+              <span>تاریخ</span>
+              <span>بخش</span>
+              <span>عنوان</span>
+              <span>وضعیت تیکت</span>
+            </div>
+            
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-date">1403/04/20 (2024/07/12 - 09:06)</span>
+              <span class="ticket-category">پکیج تمدید</span>
+              <span class="ticket-title"
+              >بررسی سرویس و خرید پلن جدید برای کاربر...</span
+              >
+              <span class="ticket-status">تکمیل شده</span>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <button class="first-page">&lt;&lt;</button>
+            <button class="prev-page">&lt;</button>
+            <button class="current-page">1</button>
+            <button class="">2</button>
+            <button class="">3</button>
+            <button class="next-page">&gt;</button>
+            <button class="last-page">&gt;&gt;</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/script/index.js"></script>
+    <script src="./assets/script/dashboard.js"></script>
+    <!-- Swiper -->
+  </body>
+</html>

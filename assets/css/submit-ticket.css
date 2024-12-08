@@ -1,0 +1,166 @@
+form.submitTicket,
+.last-5-tickets {
+  background: #000b34;
+  margin-top: 36px;
+  padding: 21px 41px 41px 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 16px;
+}
+
+form.submitTicket .support-text {
+  font-size: clamp(12px, 0.85vw + 0.85rem, 18px);
+  margin-bottom: 20px;
+}
+
+.last-5-tickets {
+  margin-top: 25px;
+}
+
+form.submitTicket h1,
+.last-5-tickets h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+form.submitTicket div {
+  display: flex;
+  flex-direction: column;
+}
+
+form.submitTicket div label {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+form.submitTicket div input ,
+form.submitTicket div textarea {
+  background: transparent;
+  border: 1px solid #fff;
+  outline: 0;
+  border-radius: 12px;
+  caret-color: auto;
+  padding: 12px 10px;
+  font-size: 18px;
+}
+
+form.submitTicket div select {
+  background: transparent;
+  border: 1px solid #fff;
+  outline: 0;
+  border-radius: 12px;
+  caret-color: auto;
+  padding: 12px 10px;
+  appearance: none;
+  position: relative;
+  background-image: url("../icons/AccordionDropDownArrow.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left 11px center;
+  font-size: 18px;
+}
+
+form.submitTicket div select option {
+  color: var(--background-color);
+  outline: none;
+  border: 0;
+}
+
+form.submitTicket div select option:hover {
+  background-color: var(--primary-color);
+}
+
+form.submitTicket div input:hover,
+form.submitTicket div input:focus ,
+form.submitTicket div select:hover ,
+form.submitTicket div textarea:hover ,
+form.submitTicket div textarea:focus {
+  border-color: var(--primary-color);
+}
+
+form.submitTicket div input:hover label,
+form.submitTicket div input:focus label  {
+  border-color: var(--primary-color);
+}
+
+form.submitTicket div:hover label {
+    color: var(--primary-color);
+}
+
+form.submitTicket ul li {
+  font-size: 14px;
+  position: relative;
+  padding-right: 15px;
+}
+
+form.submitTicket ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+form.submitTicket input[type="submit"] {
+  border: 0;
+  outline: none;
+  padding: 6px;
+  font-size: 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form.submitTicket .load-file {
+    width: 100%;
+    border: 2px dashed #FFF;
+    border-radius: 12px;
+    padding: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form.submitTicket .load-file span:nth-child(1) {
+    color: var(--primary-color);
+}
+
+form.submitTicket .load-file:hover {
+    border-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 767px) {
+  form.submitTicket h1 {
+    font-size: clamp(18px, 1.5vw + 1.5rem, 32px);
+  }
+  form.submitTicket input[type="submit"] {
+    font-size: clamp(12px, 1vw + 1rem, 22px);
+  }
+
+  form.submitTicket {
+    padding: 14px;
+  }
+
+  form.submitTicket ul li {
+    font-size: 12px;
+  }
+
+  form.submitTicket div label {
+    font-size: clamp(12px, 0.8vw + 0.8rem, 18px);
+  }
+
+  .main-content,
+  #sidebar-toggle:checked ~ .dashboard .main-content {
+    margin-right: 40px;
+  }
+}
