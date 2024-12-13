@@ -1,0 +1,189 @@
+.ticketChat {
+  background: #000b34;
+  margin-top: 36px;
+  padding: 21px 41px 41px 41px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.ticketChat h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ticketChat .text-support {
+  font-size: clamp(12px, 0.85vw + 0.85rem, 18px);
+  margin-bottom: 30px;
+}
+
+.ticketChat div input:hover,
+.ticketChat div input:focus {
+  border-color: var(--primary-color);
+}
+
+.ticketChat div input:hover label,
+.ticketChat div input:focus label {
+  border-color: var(--primary-color);
+}
+
+.ticketChat .account-header {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 50px;
+}
+
+.ticketChat .account-header span {
+  color: #000825;
+  font-size: 18px;
+}
+
+.ticketChat .account-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.ticketChat .account-row:not(:last-child) {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.15);
+  padding-bottom: 15px;
+}
+
+.ticketChat .account-row span {
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.pagination button.current-page {
+  background: var(--primary-color);
+}
+
+.chat p {
+  text-align: justify;
+  font-size: clamp(12px , 0.85vw + 0.85rem , 18px);
+}
+
+.ticketChat .chat .admin-messages {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 50px 25px 25px 25px;
+    margin: 25px auto;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.ticketChat .chat .admin-messages img {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    max-width: 75px;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+.ticketChat .chat .user-messages {
+    background: rgba(1, 148, 254, 1);
+    border-radius: 12px;
+    padding: 50px 25px 25px 25px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.ticketChat .chat .user-messages img {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    transform: translateY(-50%);
+    max-width: 75px;
+    border: 3px solid rgba(1, 148, 254, 1);
+    border-radius: 50%;
+}
+
+.write-message h5 {
+    font-size: clamp(18px , 0.7vw + 0.7rem , 22px);
+    margin-bottom: 20px;
+}
+
+.write-message textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: clamp(16px , 0.5vw + 0.5rem , 20px);
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.write-message input.primary-btn {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* .write-message input[type="file"] {
+    margin: 10px auto;
+} */
+
+.write-message span {
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .ticketChat h1 {
+    font-size: clamp(18px, 1.5vw + 1.5rem, 32px);
+  }
+  .ticketChat input[type="submit"] {
+    font-size: clamp(12px, 1vw + 1rem, 22px);
+  }
+
+  .ticketChat {
+    padding: 14px;
+  }
+
+  .ticketChat ul li {
+    font-size: 12px;
+  }
+
+  .ticketChat div label {
+    font-size: clamp(12px, 0.8vw + 0.8rem, 18px);
+  }
+
+  .main-content,
+  #sidebar-toggle:checked ~ .dashboard .main-content {
+    margin-right: 65px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content,
+    #sidebar-toggle:checked ~ .dashboard .main-content {
+      margin-right: 40px;
+    }
+}

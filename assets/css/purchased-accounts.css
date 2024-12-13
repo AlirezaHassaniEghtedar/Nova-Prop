@@ -1,0 +1,104 @@
+.accountsList {
+  background: #000b34;
+  margin-top: 36px;
+  padding: 21px 41px 41px 41px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.accountsList h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.accountsList .text-support {
+  font-size: clamp(12px, 0.85vw + 0.85rem, 18px);
+  margin-bottom: 30px;
+}
+
+.accountsList div input:hover,
+.accountsList div input:focus {
+  border-color: var(--primary-color);
+}
+
+.accountsList div input:hover label,
+.accountsList div input:focus label {
+  border-color: var(--primary-color);
+}
+
+.accountsList .account-header {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 50px;
+}
+
+.accountsList .account-header span {
+  color: #000825;
+  font-size: 18px;
+}
+
+.accountsList .account-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.accountsList .account-row:not(:last-child) {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.15);
+  padding-bottom: 15px;
+}
+
+.accountsList .account-row span {
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.pagination button.current-page {
+  background: var(--primary-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .accountsList h1 {
+    font-size: clamp(18px, 1.5vw + 1.5rem, 32px);
+  }
+  .accountsList input[type="submit"] {
+    font-size: clamp(12px, 1vw + 1rem, 22px);
+  }
+
+  .accountsList {
+    padding: 14px;
+  }
+
+  .accountsList ul li {
+    font-size: 12px;
+  }
+
+  .accountsList div label {
+    font-size: clamp(12px, 0.8vw + 0.8rem, 18px);
+  }
+
+  .main-content,
+  #sidebar-toggle:checked ~ .dashboard .main-content {
+    margin-right: 40px;
+  }
+}

@@ -8,7 +8,7 @@ const swiperPlansSlidersContainer = document.querySelectorAll('#plansSection .sw
 mobileMenuIcon.addEventListener("click", handleHamburgerMobileMenuClick);
 mobileNavMenuCloseBtn.addEventListener('click' , handleMobileNavMenuClose)
 headerPlansSectionBtn.addEventListener('click' , handleMobileNavMenuClose)
-plansSectionButtons.forEach(button => button.addEventListener('click' , handlePlansButtonsClick))
+// plansSectionButtons.forEach(button => button.addEventListener('click' , handlePlansButtonsClick))
 document.addEventListener('click' , handleCloseMenuOnDocumentClick)
 
 function handleCloseMenuOnDocumentClick (e) {
@@ -182,4 +182,19 @@ var swiper = new Swiper(".myBlogSwiper", {
       spaceBetween : 25,
     },
   }
+});
+
+var swiper = new Swiper(".hero-section-container", {
+  slidesPerView: 1,
+  loop: true,
+  cssMode: true,
+  navigation: {
+    nextEl: ".hero-section-container .swiper-button-next",
+    prevEl: ".hero-section-container .swiper-button-prev",
+  },
+  pagination: {
+    el: ".hero-section-container .swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
 });

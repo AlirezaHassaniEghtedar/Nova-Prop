@@ -366,7 +366,6 @@ header #navMenu li:not(.active):hover {
 #heroSection {
   max-width: 1235px;
   margin: 0 auto;
-  margin-bottom: 50px;
   width: 100%;
   z-index: 10;
   position: relative;
@@ -375,7 +374,61 @@ header #navMenu li:not(.active):hover {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 50px;
+  /* filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.5)); */
+  display: flex;
+}
+
+.hero-section-wrapper .swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background: #fff;
+  opacity: 1;
+}
+
+.hero-section-wrapper .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+  opacity: 1;
+}
+
+/* main div:first-child .swiper .swiper-wrapper ,
+main div:first-child .swiper {
+  overflow: initial !important;
+} */
+
+/* main .hero-section-container div.swiper-wrapper {
+  overflow: unset;
+}
+
+main .hero-section-container {
+  overflow: unset;
+} */
+
+.hero-section-wrapper {
+  /* overflow: hidden; */
   filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.5));
+}
+
+.hero-section-wrapper [class*="swiper-button"] {
+  width: 45px !important;
+  height: 45px !important;
+  border: 2px solid var(--swiper-theme-color);
+  border-radius: 50%;
+}
+
+.hero-section-wrapper .swiper-button-next {
+  right: calc(50% - 80px) !important;
+  top: unset;
+  bottom: 8px;
+  transform: translateX(50%);
+  z-index: 11;
+}
+.hero-section-wrapper .swiper-button-prev {
+  left: calc(50% - 125px) !important;
+  right: unset !important;
+  top: unset;
+  bottom: 8px;
+  transform: translateX(50%);
+  z-index: 11;
 }
 
 #heroSection .left-section {
@@ -385,6 +438,7 @@ header #navMenu li:not(.active):hover {
 #heroSection .left-section img {
   width: 100%;
   height: auto;
+  /* filter: drop-shadow(0 0 100px rgba(2, 135, 231, 0.5)); */
 }
 
 #heroSection .right-section {
@@ -1472,7 +1526,7 @@ header #account {
   }
 
   #blogSection .swiper-slide h5 {
-    font-size: clamp(8px , 0.85vw + 0.75rem , 24px);
+    font-size: clamp(8px, 0.85vw + 0.75rem, 24px);
   }
 
   #preFooterSection {
@@ -1482,12 +1536,15 @@ header #account {
 
 @media only screen and (max-width: 1234px) {
   #heroSection {
-    border-radius: 0;
+    border-radius: 25px;
     margin-top: 20px;
   }
 }
 
 @media only screen and (max-width: 1150px) {
+  #heroSection {
+    border-radius: 25px;
+  }
   #plansSection .swiper-slide ul li {
     font-size: clamp(8px, 0.8vw + 0.8rem, 24px);
   }
@@ -1526,18 +1583,18 @@ header #account {
   }
 
   #preFooterSection .right-section h5 {
-    font-size: clamp(8px , 0.8vw + 0.8rem , 32px);
+    font-size: clamp(8px, 0.8vw + 0.8rem, 32px);
     margin-bottom: 10px;
   }
 
   #preFooterSection .right-section p {
-    font-size: clamp(7px , 0.6vw + 0.6rem , 24px);
+    font-size: clamp(7px, 0.6vw + 0.6rem, 24px);
     margin-bottom: 15px;
   }
 
   #preFooterSection .right-section button {
-    font-size: clamp(8px , 0.6vw + 0.6rem , 24px);
-    border-radius: clamp(4px , 0.35vw + 0.35rem , 12px);
+    font-size: clamp(8px, 0.6vw + 0.6rem, 24px);
+    border-radius: clamp(4px, 0.35vw + 0.35rem, 12px);
     padding: 5px;
   }
 }
@@ -1654,7 +1711,7 @@ header #account {
   header #navMenu li {
     margin-left: 0;
   }
-  
+
   header nav ul li a:hover {
     color: var(--primary-color);
   }
@@ -1768,6 +1825,32 @@ header #account {
 
   header #navMenu li:not(.active):hover {
     transform: unset;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #heroSection {
+    border-radius: 0px;
+  }
+
+  .hero-section-wrapper [class*="swiper-button"] {
+    width: 35px !important;
+    height: 35px !important;
+    border: 2px solid var(--swiper-theme-color);
+    border-radius: 50%;
+  }
+
+  .hero-section-wrapper .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .hero-section-wrapper .swiper-button-next {
+    right: calc(50% - 60px) !important;
+  }
+
+  .hero-section-wrapper .swiper-button-prev {
+    left: calc(50% - 95px) !important;
   }
 }
 
@@ -1888,7 +1971,6 @@ header #account {
     margin-top: 10px;
   }
 
-  #heroSection,
   #cards h3.cards-header {
     margin-bottom: 25px;
   }
@@ -1978,7 +2060,7 @@ header #account {
     padding-inline: 10px;
   }
 
-  #plansSection .swiper-slide ,
+  #plansSection .swiper-slide,
   #blogSection .swiper-slide {
     border-radius: 10px;
   }
@@ -1991,9 +2073,9 @@ header #account {
     margin-bottom: 30px;
   }
 
-  #heroSection {
+  /* #heroSection {
     filter: drop-shadow(0 0 100px rgba(2, 135, 231, 1));
-  }
+  } */
 
   #newsSection .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 1px;
@@ -2001,6 +2083,15 @@ header #account {
 
   #newsSection .swiper-pagination {
     padding-block: 5px;
+  }
+
+  .hero-section-wrapper [class*="swiper-button"] {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .hero-section-wrapper .swiper-button-prev {
+    left: calc(50% - 90px) !important;
   }
 }
 
@@ -2128,7 +2219,7 @@ header #account {
     font-weight: 600;
   }
 
-  #plansSection [class*="swiper-button"] ,
+  #plansSection [class*="swiper-button"],
   #blogSection [class*="swiper-button"] {
     width: 40px !important;
     height: 40px !important;
@@ -2140,30 +2231,52 @@ header #account {
   }
 
   #preFooterSection .right-section h5 {
-    font-size: clamp(8px , 0.6vw + 0.6rem , 32px);
+    font-size: clamp(8px, 0.6vw + 0.6rem, 32px);
     margin-bottom: 10px;
   }
 
   #preFooterSection .right-section p {
-    font-size: clamp(7px , 0.4vw + 0.4rem , 24px);
+    font-size: clamp(7px, 0.4vw + 0.4rem, 24px);
     margin-bottom: 15px;
   }
 
   #preFooterSection .right-section button {
-    font-size: clamp(8px , 0.45vw + 0.45rem , 24px);
-    border-radius: clamp(4px , 0.35vw + 0.35rem , 12px);
+    font-size: clamp(8px, 0.45vw + 0.45rem, 24px);
+    border-radius: clamp(4px, 0.35vw + 0.35rem, 12px);
     padding: 5px;
-    border-radius: clamp(4px , 0.25vw + 0.25rem , 12px);
+    border-radius: clamp(4px, 0.25vw + 0.25rem, 12px);
   }
 
   #preFooterSection .image-container {
     margin-right: 16px;
+  }
+
+  .hero-section-wrapper .swiper-button-prev {
+    left: calc(50% - 90px) !important;
+    right: unset !important;
+  }
+
+  .hero-section-wrapper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 2px;
+  }
+
+  .hero-section-wrapper .swiper-button-next {
+    right: calc(50% - 50px) !important;
+  }
+
+  .hero-section-wrapper .swiper-button-prev {
+    left: calc(50% - 80px) !important;
+    right: unset !important;
   }
 }
 
 @media only screen and (max-width: 600px) {
   #preFooterSection {
     border-radius: 10px;
+  }
+
+  #heroSection {
+    padding-bottom: 30px;
   }
 }
 
@@ -2175,6 +2288,10 @@ header #account {
   #blogSection .blog-section-header h4 {
     padding: 3px 20px;
     border-radius: clamp(6px, 0.4vw + 0.4rem, 12px);
+  }
+
+  #heroSection {
+    padding-bottom: 35px;
   }
 }
 
@@ -2230,7 +2347,6 @@ header #account {
     font-size: 12px;
   }
 
-  #heroSection,
   #cards h3.cards-header {
     margin-bottom: 15px;
   }
@@ -2331,7 +2447,10 @@ header #account {
     padding: 20px 35px 30px;
     font-size: 11px;
   }
-  #newsSection .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  #newsSection
+    .swiper-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet,
   .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
     margin: 0 2px !important;
@@ -2394,7 +2513,7 @@ header #account {
     margin-bottom: 15px;
   }
 
-  #plansSection .swiper-pagination-bullet ,
+  #plansSection .swiper-pagination-bullet,
   #blogSection .swiper-pagination-bullet {
     width: 12px !important;
     height: 12px !important;
@@ -2414,6 +2533,10 @@ header #account {
 
   header #navMenu li {
     font-size: 16px;
+  }
+
+  #heroSection {
+    padding-bottom: 40px;
   }
 }
 
@@ -2468,8 +2591,8 @@ header #account {
     bottom: 10px !important;
   }
 
-  #plansSection [class*="swiper-button"] , 
-  #blogSection [class*="swiper-button"]  {
+  #plansSection [class*="swiper-button"],
+  #blogSection [class*="swiper-button"] {
     width: 35px !important;
     height: 35px !important;
     bottom: 7.5px !important;
